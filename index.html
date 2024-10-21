@@ -65,7 +65,7 @@ ch-To-Skill<!DOCTYPE html>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Anonymous<br>ICLR 2024</span>
+                    <span class="author-block">Anonymous<br>ICLR 2025</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -172,8 +172,50 @@ ch-To-Skill<!DOCTYPE html>
     <div class="container">
       <div class="container is-max-desktop">
         <div class="hero-body">
+          <h3 class="title" style="font-size: larger;">
+            Overview
+          </h3>
+          <img src="static/images/overview.png" alt="Descriptive text" height="100%">
+          <h2 class="subtitle has-text-centered" style="font-size: medium; margin-top: 1%;">
+            <strong>Fig:</strong> Learning a new skill in the Sketch-to-Skill framework. Step 1: Capture the task scenario from two views and collect human-drawn sketches. Step 2: Convert 2D sketches to 3D trajectories using a pretrained generator. Step 3: Execute generated trajectories to collect experience data. Step 4: Learn manipulation policy using reinforcement learning bootstrapping from  behavior cloning and using  guidance for experience data.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <h3 class="title" style="font-size: larger;">
+            Policy Learning
+          </h3>
+          <img src="static/images/policy_learning.png" alt="Descriptive text" height="100%">
+          <h2 class="subtitle has-text-centered" style="font-size: medium; margin-top: 1%;">
+            <strong>Fig:</strong> Overview of SKETCH-TO-SKILL integrating sketch-generated demonstrations with reinforcement learning. Sketch-generated experiences train an IL policy, which bootstraps the RL process. A discriminator guides exploration by rewarding similarity to sketch-generated trajectories.
+            The final action, combining IL and RL policy outputs, further enhances the exploration guidance.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <h3 class="title" style="font-size: larger;">
+            Hardware Setup
+          </h3>
           <img src="static/images/hardware_setup.png" alt="Descriptive text" height="100%">
-          <h2 class="subtitle has-text-centered">
+          <h2 class="subtitle has-text-centered" style="font-size: medium; margin-top: 1%;">
             <strong>Fig:</strong> Complete setup for the ButtonPress task in a real-world experiment. The configuration includes a UR3e robot arm equipped with a Robot Hand gripper, and a RealSense D435i camera mounted on the wrist.
           </h2>
         </div>
@@ -182,6 +224,28 @@ ch-To-Skill<!DOCTYPE html>
   </div>
 </section>
 
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <h3 class="title" style="font-size: larger;">
+            Experiments
+          </h3>
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <source src="static/videos/bc_sketchRL.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="font-size: medium; margin-top: 1%;">
+            BC Policy Evaluation (5x) 
+          </h2>
+        </div>
+      </div>
+
+</div>
+</div>
+</section>
 
 
 <!-- Image carousel -->
@@ -242,28 +306,25 @@ ch-To-Skill<!DOCTYPE html>
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -271,7 +332,7 @@ ch-To-Skill<!DOCTYPE html>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -300,7 +361,7 @@ ch-To-Skill<!DOCTYPE html>
       <h2 class="title">BibTeX</h2>
       <pre><code>
         title={SKETCH-TO-SKILL: Bootstrapping Robot Learning with human-drawn Trajectory Sketches},
-        year={2024}</code></pre>
+        year={2025}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
