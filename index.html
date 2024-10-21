@@ -52,7 +52,7 @@ ch-To-Skill<!DOCTYPE html>
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">SKETCH-TO-SKILL: Bootstrapping Robot Learning with human-drawn Trajectory Sketches</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
 <!--               <span class="author-block">
@@ -65,7 +65,7 @@ ch-To-Skill<!DOCTYPE html>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">Anonymous<br>ICLR 2024</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -73,7 +73,7 @@ ch-To-Skill<!DOCTYPE html>
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://openreview.net/forum?id=ww7JqIf494" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -105,7 +105,7 @@ ch-To-Skill<!DOCTYPE html>
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -113,7 +113,7 @@ ch-To-Skill<!DOCTYPE html>
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -124,11 +124,10 @@ ch-To-Skill<!DOCTYPE html>
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -137,7 +136,7 @@ ch-To-Skill<!DOCTYPE html>
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -156,8 +155,8 @@ ch-To-Skill<!DOCTYPE html>
             limited to specific trained tasks. SKETCH-TO-SKILL employs a Sketch-to-3D Trajectory Generator that translates 2D sketches into 
             3D trajectories, which are then used to autonomously collect initial demonstrations. We utilize these sketch-generated demonstrations 
             in two ways: to pre-train an initial policy through behavior cloning and to refine this policy through RL with guided exploration. 
-            Experimental results demonstrate that SKETCH-TO-SKILL achieves ∼96% of the performance of the baseline model that leverages teleoperated 
-            demonstration data, while exceeding the performance of a pure reinforcement learning policy by ∼170%, only from sketch inputs.
+            Experimental results demonstrate that SKETCH-TO-SKILL achieves ~96% of the performance of the baseline model that leverages teleoperated 
+            demonstration data, while exceeding the performance of a pure reinforcement learning policy by ~170%, only from sketch inputs.
             This makes robotic manipulation learning more accessible and potentially broadens its applications across various domains.
           </p>
         </div>
@@ -168,34 +167,47 @@ ch-To-Skill<!DOCTYPE html>
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
 <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="static/images/hardware_setup.png" alt="Descriptive text" height="100%">
+          <h2 class="subtitle has-text-centered">
+            <strong>Fig:</strong> Complete setup for the ButtonPress task in a real-world experiment. The configuration includes a UR3e robot arm equipped with a Robot Hand gripper, and a RealSense D435i camera mounted on the wrist.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -204,30 +216,28 @@ ch-To-Skill<!DOCTYPE html>
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
@@ -270,7 +280,7 @@ ch-To-Skill<!DOCTYPE html>
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -280,7 +290,7 @@ ch-To-Skill<!DOCTYPE html>
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -288,13 +298,15 @@ ch-To-Skill<!DOCTYPE html>
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+        title={SKETCH-TO-SKILL: Bootstrapping Robot Learning with human-drawn Trajectory Sketches},
+        year={2024}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
+  <!-- <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -310,7 +322,7 @@ ch-To-Skill<!DOCTYPE html>
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 <!-- Statcounter tracking code -->
   
