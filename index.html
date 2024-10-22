@@ -172,9 +172,8 @@ ch-To-Skill<!DOCTYPE html>
     <div class="container">
       <div class="container is-max-desktop">
         <div class="hero-body">
-          <h3 class="title" style="font-size: larger;">
-            Overview
-          </h3>
+          <h3 class="title is-3 has-text-centered" style="font-size: x-large; margin-bottom: -1%;">Overview</h3>
+          <hr>
           <img src="static/images/overview.png" alt="Descriptive text" height="100%">
           <h2 class="subtitle has-text-centered" style="font-size: medium; margin-top: 1%;">
             <strong>Fig:</strong> Learning a new skill in the Sketch-to-Skill framework. Step 1: Capture the task scenario from two views and collect human-drawn sketches. Step 2: Convert 2D sketches to 3D trajectories using a pretrained generator. Step 3: Execute generated trajectories to collect experience data. Step 4: Learn manipulation policy using reinforcement learning bootstrapping from  behavior cloning and using  guidance for experience data.
@@ -191,9 +190,8 @@ ch-To-Skill<!DOCTYPE html>
     <div class="container">
       <div class="container is-max-desktop">
         <div class="hero-body">
-          <h3 class="title" style="font-size: larger;">
-            Policy Learning
-          </h3>
+            <h3 class="title is-3 has-text-centered" style="font-size: x-large; margin-bottom: -1%;">Policy Learning</h3>
+            <hr>
           <img src="static/images/policy_learning.png" alt="Descriptive text" height="100%">
           <h2 class="subtitle has-text-centered" style="font-size: medium; margin-top: 1%;">
             <strong>Fig:</strong> Overview of SKETCH-TO-SKILL integrating sketch-generated demonstrations with reinforcement learning. Sketch-generated experiences train an IL policy, which bootstraps the RL process. A discriminator guides exploration by rewarding similarity to sketch-generated trajectories.
@@ -206,14 +204,15 @@ ch-To-Skill<!DOCTYPE html>
 </section>
 
 
+
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div class="container is-max-desktop">
         <div class="hero-body">
-          <h3 class="title" style="font-size: larger;">
-            Hardware Setup
-          </h3>
+          <h3 class="title has-text-centered" style="font-size: x-large; margin-bottom: -1%;">Hardware Setup</h3>
+          <hr>
           <img src="static/images/hardware_setup.png" alt="Descriptive text" height="100%">
           <h2 class="subtitle has-text-centered" style="font-size: medium; margin-top: 1%;">
             <strong>Fig:</strong> Complete setup for the ButtonPress task in a real-world experiment. The configuration includes a UR3e robot arm equipped with a Robot Hand gripper, and a RealSense D435i camera mounted on the wrist.
@@ -231,14 +230,74 @@ ch-To-Skill<!DOCTYPE html>
       <div class="container is-max-desktop">
         <div class="hero-body">
           <h3 class="title" style="font-size: larger;">
-            Experiments
+            Overview
           </h3>
+          <img src="static/images/sketch_hardware.png" alt="Descriptive text" height="100%">
+          <h2 class="subtitle has-text-centered" style="font-size: medium; margin-top: 1%;">
+            <strong>Fig:</strong> Environment cameras - corner and corner2, for human-drawn sketches and generating demonstration
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container is-max-desktop">
+        <h3 class="title" style="font-size: larger;">
+          Steps Vs Train Score Plot
+        </h3>
+        <div class="hero-body" style="text-align: center;">
+          <img src="static/images/hardware_train_scores.png" alt="Descriptive text" style="max-width: 50%; height: auto; display: block; margin: 0 auto;">
+          <h2 class="subtitle" style="font-size: medium; margin-top: 1%;">
+            <strong>Fig:</strong> The evaluation success rate of the BC policy of ButtonPress task trained on sketch-generated demonstrations
+          </h2>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <h3 class="title has-text-centered" style="font-size: x-large; margin-bottom: -1%;">Videos</h3>
+          <hr>
           <video poster="" id="tree" autoplay controls muted loop height="100%">
             <source src="static/videos/bc_sketchRL.mp4"
             type="video/mp4">
           </video>
           <h2 class="subtitle has-text-centered" style="font-size: medium; margin-top: 1%;">
             BC Policy Evaluation (5x) 
+          </h2>
+        </div>
+      </div>
+
+</div>
+</div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <!-- <h3 class="title has-text-centered" style="font-size: x-large; margin-bottom: -1%;">Videos</h3> -->
+          <!-- <hr> -->
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <source src="static/videos/training_success.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="font-size: medium; margin-top: 1%;">
+            The video (4x) demonstrates 5 successful task completions by RL policy with randomized button position for each trial.
           </h2>
         </div>
       </div>
